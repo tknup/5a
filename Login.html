@@ -1,0 +1,449 @@
+
+<!-- saved from url=(0031)http://m.5aspace.com/Login.aspx -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script async="" src="./Login_files/analytics.js"></script><script async="" src="./Login_files/analytics.js"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-31565668-3', 'auto');
+  ga('send', 'pageview');
+    </script>
+
+    
+
+
+
+<meta name="viewport" content="width=device-width, initial- scale=1, minimum-scale=1, maximum-scale=1"><title>
+	Login
+</title>
+<script language="JavaScript">
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new
+Date();a=s.createElement(o),
+
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a
+,m)
+
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-31565668-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+     <script type="text/javascript">
+        var LocationPhoneRequest;
+        function ShowLocationPhone()
+        {
+            
+                try
+                {
+                    LocationPhoneRequest=new ActiveXObject("Msxml2.XMLHTTP");			        		
+                }
+                catch(e)
+                {
+                    try
+                    {
+                        LocationPhoneRequest=new ActiveXObject("Microsoft.XMLHTTP");				        																					
+                    }
+                    catch(oc)
+                    {
+                        LocationPhoneRequest=null;							        
+                    }
+                }
+
+                if(!LocationPhoneRequest&&typeof XMLHttpRequest!="undefined")
+                {
+                    LocationPhoneRequest=new XMLHttpRequest();					
+                }
+                url = "GetData.ashx?ID=1&LID=" + document.getElementById("DDLLocation").value;
+             
+                if(LocationPhoneRequest!=null)
+                {
+                    LocationPhoneRequest.onreadystatechange =DisplayPhone;
+                    LocationPhoneRequest.open("GET", url, true);
+                    LocationPhoneRequest.send(null);		
+                } 
+          
+         
+       }
+      
+        
+        function DisplayPhone()
+        {
+            if (LocationPhoneRequest.readyState == 4)
+            {
+                if (LocationPhoneRequest.status == 200)
+                {
+                    if(document.getElementById("DDLLocation").value=="-1" && LocationPhoneRequest.responseText!="-2")
+                    {
+                            document.getElementById('ctl04_aPhone').style.display='none';
+                            document.getElementById("ctl04_aPhone").href = '';
+
+                    }
+                    else if(LocationPhoneRequest.responseText!="" &&  LocationPhoneRequest.responseText!="-2")
+                    {
+                           
+                           document.getElementById('ctl04_aPhone').style.display='';
+                           document.getElementById("ctl04_aPhone").href = 'tel:+1' +  LocationPhoneRequest.responseText;
+                           
+                    }
+                   
+     	        }
+		    }
+		}</script>
+<link href="./Login_files/mobile.css" type="text/css" rel="stylesheet"><style type="text/css"></style></head>
+<body data-pinterest-extension-installed="cr1.35">
+    <form name="form1" method="post" action="./Login_files/Login.html" onsubmit="javascript:return WebForm_OnSubmit();" id="form1">
+<div>
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="E67Oqpq9421jUJJpoqKfRa0+NhOQC+GpTAyHORhebbe8ofWJOMi5DG1ZktbPl6yWNSE+5aPpT2znjsHsU1EPCvtRpxN6jhS6ug9xTDgT3tN2W1wKvlqRqy9sciwFSOtcfz9bO6skQR8aLrrJEun6vzJw/9ZguJ4wq/+QYd+vwA9whB3a7A7ptJOG9HYqeXVNMOAnNF0aPrqtR9akwRGW9SdVC4+nINGk62/9LGpg+sMiHj6pXqMd9/z5Vy4KSb4wTajvIPgFjckCmRjbxGJKrekP3FAfPz+MsLbWvWsezTGVT6jpumKNOICa7X8T4l8OYvqOpHoxHhpj0vKiYobS3nY39GflVB2+SA2iN16KIoJyatJTs4bGlS/coQI9Mhj7jZQKjBKmBVet0II3myrDDfyYnmOUHlDKdeGzJlQfummIwMcOEim6Pujfo855hCUCkJz12pDfizbKInzEGGHSBoqSQw0L0Kqdt/6FaXdBR8ZJylKGlxbGhOOUKjfpul1P9KLBx/jGViv8HnEbJQFzJHGpFESord25q0rLJ/DMHj1oQuTFvav5JIwx7WlDo9vR">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="./Login_files/WebResource.axd" type="text/javascript"></script>
+
+
+<script src="./Login_files/WebResource(1).axd" type="text/javascript"></script>
+<script src="./Login_files/WebResource(2).axd" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="kBLNojeWsnO5QupihRcr0EmJPPrVrzdqYQxG5nMgaAs/olGBMME8Qi6wct3RXvYJ1K5qjI7cJaCMIcUj4e9jYQ==">
+</div>
+        
+<meta name="viewport" content="width=device-width, initial- scale=1, minimum-scale=1, maximum-scale=1">
+
+<script type="text/javascript" src="./Login_files/jquery-1.2.2.pack.js"></script>
+
+<div class="float">
+    <div class="img-logo" style="padding-right: 6px">
+        <a id="ctl04_aPhone" class="img-call" style="display: none;" href=""></a>
+    </div>
+    
+    
+    <div id="ctl04_divNav" class="toolbar" align="left">
+        <a href="http://m.5aspace.com/Default.aspx" id="ctl04_home" class="home">&nbsp;</a>&nbsp;<span id="ctl04_AccessControl"> <a href="http://m.5aspace.com/Locations.aspx" class="button">Locations </a>| <a href="http://m.5aspace.com/Login.aspx#" onclick="redirectpaymybill();" class="button">Pay My Bill</a> | <a href="http://m.5aspace.com/ContactUs.aspx" class="button">Contact Us </a></span>
+        <a id="ctl04_hypBack" class="goback" onclick="javascript:history.go(-1);">&nbsp;</a>
+    </div>
+    
+</div>
+
+<script type="text/javascript">
+InitialiseSearchBox();
+
+function redirectpaymybill()
+{
+  if(''!=null && ''=='TRUE' )
+  {
+    window.location='RentalUnits.aspx';
+  }
+  else
+  {
+    window.location='Login.aspx';
+  }
+}
+
+function ClearSearchBox()
+{
+    if($('#ctl04_txtSearch').val()=="Enter Zip Code, City or State")
+    {
+        $('#ctl04_txtSearch').val("");
+        $('#ctl04_txtSearch').removeClass("SearchBox");
+    }
+}
+
+function InitialiseSearchBox()
+{
+    if($('#ctl04_txtSearch').val()=="")
+    {
+    $('#ctl04_txtSearch').addClass("SearchBox")
+        $('#ctl04_txtSearch').val("Enter Zip Code, City or State");
+    }
+}
+
+function validate()
+{
+    if($('#ctl04_txtSearch').val()=="Enter Zip Code, City or State" ||  $('#ctl04_txtSearch').val()=="")
+    {
+
+    //  $('#spnErrorZip').text("Enter the Zipcode");
+      return false;
+    }
+}
+
+
+    function nearMe_Click1()
+    {
+      var latitude = "33.3163";
+      var longitude = "-111.831";
+      window.location.href = "Locations.aspx?lat=" + latitude + "&lng=" + longitude + "&UseCurrentLocation=YES";
+      // window.location.href = "http://localhost:3613/e-storageOnlineMobile/Locations.aspx?lat=" + latitude + "&lng=" + longitude + "&UseCurrentLocation=YES";
+     }
+
+    function nearMe_Click()
+    {
+        if(navigator.geolocation)
+        {
+            var options = {timeout:60000};
+            // {maximumAge:600000,timeout:5000, enableHighAccuracy:true}
+            navigator.geolocation.getCurrentPosition(showLocation, 
+                                       errorHandler,
+                                        options);
+        }
+        else
+        {
+            alert("Sorry, browser does not support geolocation!");
+        }
+    }
+    
+   
+    function showLocation(position)
+    {
+        var latitude = position.coords.latitude;
+        var longitude = position.coords.longitude;
+        //alert("Latitude : " + latitude + " Longitude: " + longitude);
+        window.location.href = "Locations.aspx?lat=" + latitude + "&lng=" + longitude + "&UseCurrentLocation=YES";
+    }
+
+    function errorHandler(err)
+    {
+        if(err.code == 1) 
+        {
+            alert("Error: Access is denied!");
+        }
+        else if( err.code == 2)
+        {
+            alert("Error: Position is unavailable!");
+        }
+    }
+    
+    function GetRecentUrl()
+    {
+      // alert("1");
+     // ajaxRequest("GetData.ashx?ID=1")
+    }
+    
+     function initiateRequest()
+        {
+            if (window.XMLHttpRequest)
+                return new XMLHttpRequest();
+            elseif(window.ActiveXObject)
+                return new ActiveXObject("Microsoft.XMLHTTP");
+        }
+
+        function ajaxRequest(theURL) 
+        {
+        alert("2");
+            var thisRequestObject = initiateRequest();
+            thisRequestObject.onreadystatechange = function()
+            {
+                if (thisRequestObject.readyState == 4) 
+                {
+                    if (thisRequestObject.status == 200) 
+                    {
+                       alert(thisRequestObject.responseText);
+                    document.getElementById('hypBack').href = thisRequestObject.responseText;
+                     }
+                        
+                                
+                }
+            }
+            thisRequestObject.open("GET", theURL, true);
+            thisRequestObject.send(null);
+        }
+
+    
+       
+
+
+
+
+
+
+
+</script>
+
+
+        <div id="Container" class="content">
+            
+            <div id="LoginBlock">
+                <div class="header">
+                    Login</div>
+                <div class="LoginFieldSet" style="padding-right: 3%; padding-left: 8%;">
+                    <div style="padding-bottom: 4px">
+                        <span id="lblStatus"></span></div>
+                    <select name="DDLLocation" id="DDLLocation" class="DropDownHeight" onchange="ShowLocationPhone();" style="width: 98%;">
+	<option value="-1">--Select a location--</option>
+	<option value="1">Foster City</option>
+	<option value="3">Lahaina</option>
+	<option value="2">Moraga</option>
+
+</select><br>
+                     <span id="rfvDDLLocation" class="ErrorText" style="color:Red;display:none;">Please select your Location</span>
+                    
+                    <div>
+                    </div>
+                    
+                    <div id="divGateCodeLogin">
+                        <div>
+                            <span class="labelfont">Unit Number </span>&nbsp;<b class="Mandatory">*</b>
+                            <br>
+                            <input name="txtUnitNumber" type="text" id="txtUnitNumber" class="TextBoxHeight" style="width:95%;"><br>
+                            <span id="rfvUnitNumber" class="ErrorText" style="color:Red;display:none;">Unit Number Required</span>
+                            <span id="revUnitNumber" class="ErrorText" style="color:Red;display:none;">Unit Number is invalid</span>
+                        </div>
+                        <div>
+                            <span class="labelfont">Gate Code</span>&nbsp;<b class="Mandatory">*</b>
+                            <br>
+                            <input name="txtGateCode" type="password" id="txtGateCode" class="TextBoxHeight" style="width:95%;"><br>
+                            <span id="rfvGateAccessCode" class="ErrorText" style="color:Red;display:none;">Gate Access Code Required</span>
+                            <span id="revGateAccessCode" class="ErrorText" style="color:Red;display:none;">Gate Access Code is invalid</span>
+                        </div>
+                    </div>
+                    <br>
+                    <div align="left">
+                        <input type="submit" name="btnUnitLogin" value="LOGIN" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;btnUnitLogin&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="btnUnitLogin" class="Viewbtn" style="display: inline;">
+                        &nbsp;&nbsp; &nbsp;<br>
+                    </div>
+                    
+                </div>
+            </div>  
+        </div>
+        <div style="padding:4px 4px 4px 4px; border-top:solid 1px #0075AA; margin-top:180px; font-family: Arial, Verdana, Helvetica, sans-serif; font-size:13px;text-align:justify;">
+        Need Help on ‘Pay My Bill’? Please contact your storage facility for assistance.
+        </div>
+        
+    
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("rfvDDLLocation"), document.getElementById("rfvUnitNumber"), document.getElementById("revUnitNumber"), document.getElementById("rfvGateAccessCode"), document.getElementById("revGateAccessCode"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var rfvDDLLocation = document.all ? document.all["rfvDDLLocation"] : document.getElementById("rfvDDLLocation");
+rfvDDLLocation.controltovalidate = "DDLLocation";
+rfvDDLLocation.errormessage = "Please select your Location";
+rfvDDLLocation.display = "Dynamic";
+rfvDDLLocation.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+rfvDDLLocation.initialvalue = "-1";
+var rfvUnitNumber = document.all ? document.all["rfvUnitNumber"] : document.getElementById("rfvUnitNumber");
+rfvUnitNumber.controltovalidate = "txtUnitNumber";
+rfvUnitNumber.errormessage = "Unit Number Required";
+rfvUnitNumber.display = "Dynamic";
+rfvUnitNumber.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+rfvUnitNumber.initialvalue = "";
+var revUnitNumber = document.all ? document.all["revUnitNumber"] : document.getElementById("revUnitNumber");
+revUnitNumber.controltovalidate = "txtUnitNumber";
+revUnitNumber.errormessage = "Unit Number is invalid";
+revUnitNumber.display = "Dynamic";
+revUnitNumber.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+revUnitNumber.validationexpression = "^[a-zA-Z0-9 ]*$";
+var rfvGateAccessCode = document.all ? document.all["rfvGateAccessCode"] : document.getElementById("rfvGateAccessCode");
+rfvGateAccessCode.controltovalidate = "txtGateCode";
+rfvGateAccessCode.errormessage = "Gate Access Code Required";
+rfvGateAccessCode.display = "Dynamic";
+rfvGateAccessCode.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+rfvGateAccessCode.initialvalue = "";
+var revGateAccessCode = document.all ? document.all["revGateAccessCode"] : document.getElementById("revGateAccessCode");
+revGateAccessCode.controltovalidate = "txtGateCode";
+revGateAccessCode.errormessage = "Gate Access Code is invalid";
+revGateAccessCode.display = "Dynamic";
+revGateAccessCode.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+revGateAccessCode.validationexpression = "^[a-zA-Z0-9]*$";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        WebForm_AutoFocus('txtUnitNumber');//]]>
+</script>
+</form>
+
+    <script type="text/javascript">
+    ShowLocationPhone();
+    if('False'.toUpperCase()=='TRUE')
+    {
+      document.getElementById('divOnlineRegistration').style.display='none';
+      
+    } 
+    
+    if('False'.toUpperCase()=='TRUE')
+    {
+      document.getElementById('divForgotPassword').style.display='none';
+    }
+    
+    
+    function ValidateAlphaNumeric()
+    {
+               var key;
+               var keychar;
+               if (window.event) 
+                {
+                   key = window.event.keyCode;
+                }
+                else
+                {
+                   key = e.which;
+                }
+              
+                keychar = String.fromCharCode(key);
+                var IsMatched= keychar.match(/^[a-zA-Z0-9]*$/);
+                if(IsMatched==null)
+                {
+                  
+                   return false;
+              
+                }
+    }
+    
+    </script>
+
+
+
+</body></html>

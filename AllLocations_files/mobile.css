@@ -1,0 +1,864 @@
+﻿a
+{
+	color:White;
+	text-decoration:none;
+	border:0px;
+} 
+body 
+{
+    font-family:Arial, Verdana, "Trebuchet MS" , Tahoma;
+    background-color:#E3E3E3;
+    height: 100%;
+    width:100%;
+    padding:0;
+    margin:0;
+} 
+.toolbar 
+{
+	color:White;
+	height:23px;
+    border-bottom: 1px solid #B84C41; 
+	padding:7px 10px 7px 10px; 
+    background-color:#B84C41;
+    position: relative;
+    width:100%; 
+}
+
+.AsPerAccessRight
+{
+  font-family : Arial, Verdana, "Trebuchet MS" , Tahoma;
+	font-size: 16px;
+	font-weight:bold;
+	text-align:center;
+	width:100%;
+}
+
+.footer
+{
+	 border-top: 1px solid #B3B3B3; 
+	 text-align:justify;
+	 color:White;
+	 background-color: #0075AA;
+	 bottom: 0;
+	 clear:both;
+	 z-index:190000; 
+	 position:fixed;
+     font-family: Arial, Verdana, Helvetica, sans-serif;
+     font-size: 13px;  
+	
+}
+
+.loginfooter
+{
+	 border-top: 1px solid #0075AA; 
+	 text-align:justify;
+	 color:Black;
+	 bottom: 0;
+	 clear:both;
+	 z-index:190000; 
+	 position:fixed;
+     font-family: Arial, Verdana, Helvetica, sans-serif;
+     font-size: 13px;  
+}
+
+.img-logo
+{
+	background: url(../../images/5A-Logo-Mobile.png) no-repeat;  
+    vertical-align:middle;
+    margin-left:7px;
+    margin-bottom:2px;
+    margin-top:0px;
+    padding-top:0px;  
+    height:60px;
+    border:0;
+}
+.img-call
+{  
+	background: url(../../images/StorAllCall.png) no-repeat 96% center;   
+	width:100px;
+	vertical-align:middle;
+    float:right;  
+    margin-bottom:5px;
+    margin-top:0px;
+    padding-top:0px;  
+    padding-right:20px;
+    height:60px;
+    border:0;
+    z-index:9999
+} 
+div.float
+{
+	padding-top:5px;
+	position:fixed;
+	background-color:White;
+	top: 0px;
+	left: 0px;
+	width:100%;
+	z-index:9999;
+}
+
+
+
+.button 
+{
+	font-family: Arial, Verdana, "Trebuchet MS" , Tahoma;
+	font-size: 14px;
+	background:transparent;
+	border:0px;
+	-moz-box-shadow:0px 0px 0px 0px;
+	-webkit-box-shadow:0px 0px 0px 0px;
+	text-shadow:0px 0px 0px 0px;
+	color:white;
+	width:25%;
+	padding:1;
+}
+.Backbtn
+{
+	font-family: Arial, Verdana,"Trebuchet MS" , Tahoma;
+	font-size: 14px;
+	font-weight:bolder;
+	Border-radius:2px;
+	background-color:#4E1211;
+	-moz-border-radius:2px;
+	-webkit-border-radius:3px;
+	-moz-box-shadow:1px 1px 1px 1px;
+	-webkit-box-shadow:1px 1px 1px 1px;
+	color:white;
+	text-shadow:0px 0px 0px 0px;
+	border:0; 
+	 background:-webkit-gradient(linear,0% 0%,0% 100%,from(#4E1211),to(#4E1211));
+ background:-moz-linear-gradient(top,#4E1211,#4E1211);
+	padding:3px 10px 3px 10px;
+	margin-left:0px;
+	text-align:left;
+}
+
+.home
+{   
+	background: url(../../images/home.png) no-repeat 100% center;   
+	border:0;  
+	padding:2px 15px 8px 15px;
+	margin-left:0px; 
+	vertical-align:middle;
+	
+}
+
+.goback
+{
+	background: url(../../images/back.png) no-repeat 100% 100%;   
+	border:0;  
+	padding:2px 17px 6px 15px;
+	margin-right:5px; 
+	position:absolute;
+	right:20px;
+	vertical-align:middle
+}
+
+.HomeTab
+{ 
+	border-bottom:1px solid #B3B3B3;
+	font-size: 14px;
+	color:Black;
+	cursor:pointer;
+	height:35px; 
+	line-height:35px;
+	padding-left:10px;
+	padding-right:10px;
+	/*background: url(../../images/Arrow-Green.png) no-repeat 96% center; */
+	background:url(../../images/Arrow-Green.png) no-repeat 96% center, url(../../images/Butn-Normal.png) repeat;
+	margin: 0px -12 -2 0px;
+	background-color: #E3E3E3; 
+	text-decoration:none;
+}
+.HomeTab:hover
+{ 
+	border-bottom:1px solid #B3B3B3;
+	font-size: 14px;
+	color:Black;
+	cursor:pointer;
+	height:35px; 
+	line-height:35px;
+	padding-left:10px;
+	padding-right:10px;
+	/*background: url(../../images/Arrow-Green.png) no-repeat 96% center; */
+	background:url(../../images/Arrow-Green.png) no-repeat 96% center,url(../../images/Butn-Touch.png) repeat;
+	margin: 0px -12 -2 0px;
+	background-color: #E3E3E3; 
+	text-decoration:none;
+}
+
+
+.content
+{ 
+	position:relative;
+	margin:0px;
+	padding:0px;
+	left:0px;
+	top:104px;  
+	z-index:0;
+}
+.contentLogin
+{ 
+	position:relative;
+	margin:0px;
+	padding:0px;
+	left:0px;
+	top:135px;  
+	z-index:0;
+}
+.contentDefault
+{ 
+	position:relative;
+	margin:0px;
+	padding:0px;
+	left:0px;
+	top:276px;  
+	z-index:0;
+}
+.ReserveHead
+{
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    padding-left:10px;
+    font-weight:bold;
+    color:#B80800;
+    background-color: #E3E3E3;
+    height:35px;
+   padding-left:6px;
+   border-bottom:1px solid #B3B3B3
+}
+
+
+.Banner
+{ 
+	background: url(../../images/5A-Banner.PNG) no-repeat; 	
+	background-color: #0045a3;
+	height:122px;  
+}
+
+#LoginBlock
+{
+	margin:20px 10px 0 10px;
+	border:1px solid #134a6f;
+	Border-radius:4px; 
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-moz-box-shadow:4px;
+	-webkit-box-shadow:4px; 
+	text-align:center;
+}
+
+#LoginBlock .header
+{
+	background-color: #373737; 
+	height:25px; 
+	line-height:25px;
+	text-align:center;
+	color:White;
+}
+#LoginBlock .LoginFieldSet
+{
+	font-family: Arial, Verdana,"Trebuchet MS" , Tahoma;
+	font-size: 13px;
+	padding:10% 20% 10% 22%;
+	
+	text-align:left;
+}
+
+.expand_heading 
+{
+	cursor:pointer;
+	padding: 0 0 0 0px;
+	margin: 0 0 0 0;
+	height: 35px;
+ line-height :35px;
+	width: 100%;
+	font-size: 1em;
+	font-weight: normal;
+	background:url(../../images/Arrow-Green-Down.png) no-repeat 96% center,url(../../images/Butn-Normal.png) repeat-x;
+	
+	float: right;
+	background-color: #E3E3E3;
+	border-bottom:1px solid #B3B3B3;
+	
+}
+.expand_heading:hover {
+	padding: 0 0 0 0px;
+	margin: 0 0 0 0;
+	height: 35px;
+    line-height :35px;
+	width: 100%;
+	font-size: 1em;
+	font-weight: normal;
+	background:url(../../images/Arrow-Green-Down.png) no-repeat 96% center,url(../../images/Butn-Touch.png) repeat-x;
+	float: right;
+	background-color: #E3E3E3;
+	border-bottom:1px solid #B3B3B3;
+	
+}
+
+.expand_heading a { 
+color: #000000;
+	text-decoration: none;
+	display: block;
+	height: 35px;
+line-height:35px;
+padding-left: 5px;
+
+}
+.TextNormalHeader {
+      font-family: Arial, Verdana, Helvetica, sans-serif;
+      font-size: 15px;
+      text-decoration: none;
+      padding-left:10px;
+      font-weight:bold;
+      color:Red;
+      padding-top:10px;
+}
+
+.TextNormal {
+      font-family: Arial, Verdana, Helvetica, sans-serif;
+      font-size: 15px;
+      text-decoration: none;
+      padding-left:10px;
+}
+
+.CenterText
+{
+	padding-top:35%;
+	height:100%;
+}
+
+.expand_all
+{
+cursor:default;
+}
+
+.BackbtnCenter
+{
+	font-family: Arial, Verdana,"Trebuchet MS" , Tahoma;
+	font-size: 14px;
+	font-weight:bolder;
+	Border-radius:2px;
+	background-color:#4E1211;
+	-moz-border-radius:2px;
+	-webkit-border-radius:3px;
+	-moz-box-shadow:1px 1px 1px 1px;
+	-webkit-box-shadow:1px 1px 1px 1px;
+	color:white;
+	text-shadow:0px 0px 0px 0px;
+	border:0; 
+	 background:-webkit-gradient(linear,0% 0%,0% 100%,from(#4E1211),to(#4E1211));
+ background:-moz-linear-gradient(top,#4E1211,#4E1211);
+	padding:3px 10px 3px 10px;
+	margin-left:0px;
+	text-align:center;
+}
+
+.active {background-position: left bottom;
+	/*background: url(../../images/Arrow-Green-Down.png) no-repeat 96% center;*/
+	background:url(../../images/Arrow-Green-Down.png) no-repeat 96% center,url(../../images/Butn-Normal.png) repeat-x;
+	background-color:#E3E3E3;
+	}
+
+.toggle_container {
+	margin: 0 0 5px;
+	padding: 0;
+	background: #ffffff;
+	font-family: Arial, Verdana, "Trebuchet MS" , Tahoma;
+
+	font-size: 1.2em;
+	width: 100%;
+
+	color:Black;
+	
+}
+.toggle_container .box 
+{
+	font-family: Arial, Verdana, "Trebuchet MS" , Tahoma;
+		
+	padding-left:0px;
+}
+
+
+/*.toggle_container img {
+	float: left;
+	margin: 10px 15px 15px 0;
+	padding: 5px;
+	background: #ddd;
+	border: 1px solid #ccc;
+	
+}
+*/
+.expand_all
+{
+width:116px;
+height:20px;
+/*background:url(extra_buttons.png) no-repeat top left;*/
+float:right;
+cursor: pointer; 
+}
+.expanded
+{
+background-position:bottom left;
+
+}
+.expand_wrapper
+{
+		background-color:#134a6f;
+}
+
+.Viewbtn
+{
+       font-family: "Trebuchet MS" , Tahoma, Arial, Verdana;
+      font-size: 13px;
+      font-weight:bold;
+      Border-radius:2px;
+      background-color:#373737;
+      -moz-border-radius:2px;
+      -webkit-border-radius:3px;
+      -moz-box-shadow:0px 0px 0px 0px;
+      -webkit-box-shadow:0px 0px 0px 0px; 
+      color:white;
+      text-shadow:0px 0px 0px 0px;
+      border:0; 
+      background:-webkit-gradient(linear,0% 0%,0% 100%,from(#373737),to(#373737));
+	  background :-moz-linear-gradient(top,#373737,#373737);
+      text-decoration:none;
+      padding:5px 10px 5px 10px;
+      display: block; 
+      width:80px;
+      text-align:center;
+  
+      
+}
+.Location
+{
+	border-bottom:1px solid #B3B3B3;
+	padding-left:10px;
+	padding-right:4px;
+	padding-bottom:2px;
+	padding-top:2px;
+	
+}
+.LocationNoPad
+{
+
+  	border-bottom:1px solid #B3B3B3;
+  	
+}
+.ReserveSpace
+{
+	padding-left:10px;
+	padding-bottom:9px;
+
+}
+
+.NormalText
+{
+	font-family: Arial, Verdana, "Trebuchet MS" , Tahoma;
+	font-size: 15px;
+}
+
+.UnitSizeHeader
+{
+	background:#BEBEBE;
+	color:#B80800;
+	 font-family: "Trebuchet MS" , Tahoma, Arial, Verdana;
+	     font-size: 14px;
+}
+.tbRenttd
+{
+  
+  font-family: Arial, Verdana, "Trebuchet MS" , Tahoma;
+  font-size : 15px;
+  padding-top:5px;
+  padding-bottom:5px;
+  padding-left:5px;
+  border-bottom:solid 1px black;
+}
+.ContactUs
+{
+	padding-top:10px;
+	padding-left:10px;
+	padding-bottom:10px;
+	font-size: 14px;
+	font-family: Arial, Verdana, "Trebuchet MS" , Tahoma;
+	
+}
+.ErrorText
+{
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+    font-size: 12px;
+    color:Red
+}
+.labelfont
+{
+	
+	font-family: Arial, Verdana, "Trebuchet MS" , Tahoma;
+	font-size: 15px;
+  
+}
+.divContact
+{
+   padding-bottom:8px;
+}
+
+.tdstyle
+{
+	font-family: Arial, Verdana, "Trebuchet MS" , Tahoma;
+	font-size: 15px;
+	padding-left:5px;
+	font-weight: bold;
+	color: #000000;
+	font-family:Arial;
+	height:26px;
+    padding-left:5px;
+    border:none;
+}
+.tdLabel
+{
+	font-family: Arial, Verdana, "Trebuchet MS" , Tahoma;
+	font-size: 15px;
+	font-weight: Normal;
+	color: black;
+	font-family: Arial,Verdana;
+	padding-left:5px;
+	border:none;
+    height:26px;
+}
+.tablestyle
+{
+    border-right  : #134a6f 1px solid;
+	padding-right: 3px;
+	border-top: #134a6f 1px solid;
+	padding-left: 30px;
+	padding-bottom:1px;
+	border-left: #134a6f 1px solid;
+	padding-top: 1px;
+	border-bottom: #134a6f 1px solid;
+	border-collapse: collapse;
+	width:94%;
+	background-color:White;
+}
+.DropDownHeight
+{
+  height:30px;
+  border:1px solid #727272;
+  font-size:16px;
+
+}
+
+.tdheader
+{
+	background-color:#134a6f; 
+	color:White;
+	vertical-align: middle;
+	height:20px;
+}
+.divtbxAlign
+{
+    padding-right:10px;
+    text-align:left;
+    padding-top:4px;
+    padding-bottom:4px;
+   
+}
+.Contents
+{
+	 font-family: Arial, Verdana, Helvetica, sans-serif;
+      font-size: 14px;
+      padding-left:10px;
+      padding-top:10px;
+      padding-right:5px;
+      text-align:justify;
+    
+}
+
+.splittb
+{
+	padding:3px 0px 3px 0px;
+	
+}
+.splitdiv
+{
+   height:1px;
+    background-color:Gray;
+}
+
+.Login
+{
+	/*border-bottom:1px solid #B3B3B3;*/
+	font-size: 14px;
+	color:Black;
+	cursor:pointer;
+	height:31px;
+	line-height:31px;
+	padding-left:10px;
+	padding-right:10px;
+	/*background: url(../../images/Arrow-Green.png) no-repeat 96% center; */
+	background:url(../../images/1px-login.png) repeat;
+	margin: 0px -12 -2 0px;
+	background-color: #E3E3E3; 
+	text-decoration:none;
+
+}
+.WelcomeNote
+{
+	text-align:right;
+	padding-right:5px;
+	color:White;
+	 
+}
+.SearchBox
+{
+	color:#B3B3B3;
+	font-size:14px;
+}
+
+.TextNormalSmall {
+      font-family: Arial, Verdana, Helvetica, sans-serif;
+      font-size: 13px;
+      text-decoration: none;
+    
+}
+.LinkToReservePage
+{
+	font-weight: bold;
+	color: Blue; 
+	text-decoration: underline;
+	font-size: 14px;
+}
+
+
+.SearchBar
+{
+	height:72px;
+    border-bottom: 1px solid green; 
+	padding:7px;
+    position: relative;
+    width:100%;
+    background-color:#ec1d25;
+}
+
+.DisabledViewbtn
+{
+      font-family: "Trebuchet MS" , Tahoma, Arial, Verdana;
+      font-size: 14px;
+      font-weight:bold;
+      Border-radius:2px;
+      background-color:#EEEEE7;
+      -moz-border-radius:2px;
+      -webkit-border-radius:3px;
+      -moz-box-shadow:0px 0px 0px 0px;
+      -webkit-box-shadow:0px 0px 0px 0px; 
+      color:white;
+      text-shadow:0px 0px 0px 0px;
+      border:0; 
+      background:-webkit-gradient(linear,0% 0%,0% 100%,from(#EEEEE7),to(#EEEEE7));
+  background :-moz-linear-gradient(top,#EEEEE7,#EEEEE7);
+      text-decoration:none;
+      padding:5px 10px 5px 10px;
+      display: block; 
+      width:80px;
+      text-align:center;
+  
+      
+}
+
+
+.Mandatory
+{
+	color:Red;
+}
+
+
+.headerText
+{
+	font-weight:bold;
+     text-align:center;
+     padding-top:5px;
+	
+}
+.WaitScreen
+{
+	position:fixed;
+	_position:absolute; /* hack for internet explorer 6*/
+	height:100%;
+	width:100%;
+	top:0;
+	left:0;
+	background:#868485;
+	border:1px solid #cecece;
+	z-index:1000;
+	opacity:0.5;
+	filter:alpha(opacity=50);
+	text-align:center;
+	vertical-align:middle;
+}
+.center
+{
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	position:fixed;
+	width:100%;
+	_position:absolute;
+	top:50%;
+	left:25%;
+	font-weight:bolder;
+	font-size:16px;
+	z-index:5;
+		
+	
+}
+
+
+.SuccessPopup
+{
+position:absolute;
+padding:10px;
+width:120px;
+background-color:#0075AA;
+border:5px solid #cecece;
+
+color:White;
+	-moz-border-radius: 20px; /* Firefox */
+	-webkit-border-radius: 20px; /* Safari and chrome */
+	-khtml-border-radius: 20px; /* Linux browsers */
+
+
+}
+
+div.ModalPopup {
+	position: absolute;
+	left: 50%;
+    top: 50%; 
+    visibility: visible;
+    vertical-align: middle; 
+	background-color: #ffffff;
+	position:absolute;
+	/* set z-index higher than possible */
+	z-index:10000;
+    height :auto;
+}
+
+
+.Background
+{
+   position: fixed;
+   left: 0;
+   top: 0;
+   z-index: 10;
+   width: 100%;
+   height: 100%; 
+   FILTER: alpha(opacity=50); BACKGROUND-COLOR: #FFFFFF; opacity: 0.50
+}
+
+div.MaskedDiv 
+{
+	visibility: hidden;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:verdana;
+	font-weight:bold;
+	padding:40px;
+    z-index:100;
+	background-image:url(images/spinner.gif);
+	/* ieWin only stuff */
+	_background-image:none;
+	
+}
+
+
+.processing
+{
+position:absolute;
+padding:10px;
+width:120px;
+background-color:#0075AA;
+border:5px solid #cecece;
+text-align:center;
+
+color:White;
+	-moz-border-radius: 20px; /* Firefox */
+	-webkit-border-radius: 20px; /* Safari and chrome */
+	-khtml-border-radius: 20px; /* Linux browsers */
+}
+
+.Amennities
+{
+	padding:4px 4px 4px 26px;
+}
+.ViewUnitsWidth
+{
+	padding:5px 2px 5px 2px;
+	width:135px;
+}
+
+.UnitDetailsNote
+{
+	font-size: 14px;
+	font-weight:bold;
+	color:white;
+	text-align:center;
+	cursor:pointer;
+	padding:5px 5px 5px 5px;
+	margin: 0px -12 -2 0px;
+	background-color: #B4B4B4; 
+	text-decoration:none;
+
+}
+
+.UnitInventorySubHeader
+{
+	
+	color: #10487b; 
+	/*padding-left: 85px;*/
+	font-size: 17px;	
+	text-align:left;
+	
+}
+
+.UnitInventoryHeader
+{
+	padding:5px;
+	display:inline-block;
+	color: #10487b; font-size: 13pt; font-weight: bold;
+}
+
+.FloatLeft
+{
+	float:left;
+
+	
+}
+
+.pad-right-30
+{
+	padding-right:30px;
+	
+}
+.width-50
+{
+	width:45px;
+	
+}
+
+.pad-20
+{
+	padding:5px 10px 10px 20px;
+}
+
+.pad-left-10
+{
+	padding:0px 0px 0px 10px;
+}
+
+.pad-top-10
+{
+	padding:10px 0px 0px 0px;
+}
+
+
+

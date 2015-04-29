@@ -1,0 +1,337 @@
+
+<!-- saved from url=(0035)http://m.5aspace.com/ContactUs.aspx -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script async="" src="./ContactUs_files/analytics.js"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-31565668-3', 'auto');
+  ga('send', 'pageview');
+    </script>
+
+    
+
+
+
+<meta name="viewport" content="width=device-width, initial- scale=1, minimum-scale=1, maximum-scale=1"><title>
+	ContactUs
+</title>
+    <script type="text/javascript">
+        var LocationPhoneRequest;
+        function ShowLocationPhone()
+        {
+            
+                try
+                {
+                    LocationPhoneRequest=new ActiveXObject("Msxml2.XMLHTTP");			        		
+                }
+                catch(e)
+                {
+                    try
+                    {
+                        LocationPhoneRequest=new ActiveXObject("Microsoft.XMLHTTP");				        																					
+                    }
+                    catch(oc)
+                    {
+                        LocationPhoneRequest=null;							        
+                    }
+                }
+
+                if(!LocationPhoneRequest&&typeof XMLHttpRequest!="undefined")
+                {
+                    LocationPhoneRequest=new XMLHttpRequest();					
+                }
+                url = "GetData.ashx?ID=1&LID=" + document.getElementById("DDLLocation").value;
+             
+                if(LocationPhoneRequest!=null)
+                {
+                    LocationPhoneRequest.onreadystatechange =DisplayPhone;
+                    LocationPhoneRequest.open("GET", url, true);
+                    LocationPhoneRequest.send(null);		
+                } 
+          
+         
+       }
+      
+        
+        function DisplayPhone()
+        {
+            if (LocationPhoneRequest.readyState == 4)
+            {
+                if (LocationPhoneRequest.status == 200)
+                {
+                    if(document.getElementById("DDLLocation").value=="-1" && LocationPhoneRequest.responseText!="-2")
+                    {
+                    try
+                    {
+                            document.getElementById('ctl04_aPhone').style.display='none';
+                            document.getElementById("ctl04_aPhone").href = '';
+                            }
+                            catch(err)
+                            {
+                            }
+
+                    }
+                    else if(LocationPhoneRequest.responseText!="" &&  LocationPhoneRequest.responseText!="-2")
+                    {
+                              try
+                    {
+                          
+                           document.getElementById('ctl04_aPhone').style.display='';
+                           document.getElementById("ctl04_aPhone").href = 'tel:+1' +  LocationPhoneRequest.responseText;
+                          }
+                            catch(err)
+                            {
+                            }  
+                    }
+                   
+     	        }
+		    }
+		}</script>
+<link href="./ContactUs_files/mobile.css" type="text/css" rel="stylesheet"><style type="text/css"></style></head>
+<body data-pinterest-extension-installed="cr1.35">
+    <form name="form1" method="post" action="./ContactUs_files/ContactUs.html" id="form1">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="oQIoTFRs42OXfpyWtZGvUhTxXqy7gR8nM8l1eOT/DwhI5oRLV3d3w37/pjfhKpqCfPObT3eQO1cnCAkdWoROLDcJpizOEXkPf16+xnylp7Ghl/6rohlS9gJ43bqUVCsJTztniTbtyHSmw6GsFMTS1f088ZEgjcdsin5rEmCFoBJVhgmXYWGBwU48s9Joq0+6aJrIBIdnVB6PPzUUpV3RKPkpPTFkfnKqkeaSBUDcifwaZU+Rf0H8olVRVWo463zx8GGr4JRN8UZYtmDQcKTaHP78AatIj9eLFzCcF+opFsAu/yLiuVIl5ZbYfFlA/73HUhS4UqGpP7QKGUoi1os3DTigOnKAw+/AA7V4aGO33NHF8FvAc4GCTq20IR0LKafB53k3buaDNRWjpB7A3ky36VLadZtLn4WxTtLwaAiAVkKdlkjS4ANEADdhfXMJunlaNx8Sqbb1LtWaVoRbncdlrT0CHqt5AfdTxiw7fUtEvLd5+IiyOx5At5dcuDT+vMlVSvRglW0PbaqAlXP0LxTkeiZPtVlQL8s6ry2/0XON42v1p6vMvUUsBKyWXVvwvOzyjircP8QrtcY/OMC5z5hWlN4l4S6cvWj8fn5dI4J+X9M8SPGSi10Y7UfkyY2+L1TSeY+e4LnTnO9lObfAT84lyg==">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="./ContactUs_files/WebResource.axd" type="text/javascript"></script>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="HnPvhO3L86S2i7pFqYug0mXpunvWp9KC/DaY3ozjwoctp/+Q7AgoUxmff6m0CK9mxSuFEUUcYGsNP7RpD43nuak6+58Xbt1zy7xhY0GZBkY=">
+</div>
+        <div>
+            
+<meta name="viewport" content="width=device-width, initial- scale=1, minimum-scale=1, maximum-scale=1">
+
+<script type="text/javascript" src="./ContactUs_files/jquery-1.2.2.pack.js"></script>
+
+<div class="float">
+    <div class="img-logo" style="padding-right: 6px">
+        <a id="ctl04_aPhone" class="img-call" style="display: none;" href=""></a>
+    </div>
+    
+    
+    <div id="ctl04_divNav" class="toolbar" align="left">
+        <a href="http://m.5aspace.com/Default.aspx" id="ctl04_home" class="home">&nbsp;</a>&nbsp;<span id="ctl04_AccessControl"> <a href="http://m.5aspace.com/Locations.aspx" class="button">Locations </a>| <a href="http://m.5aspace.com/ContactUs.aspx#" onClick="redirectpaymybill();" class="button">Pay My Bill</a> | <a href="./ContactUs_files/ContactUs.html" class="button">ContactUs </a></span>
+        <a id="ctl04_hypBack" class="goback" onClick="javascript:history.go(-1);">&nbsp;</a>
+    </div>
+    
+</div>
+
+<script type="text/javascript">
+InitialiseSearchBox();
+
+function redirectpaymybill()
+{
+  if(''!=null && ''=='TRUE' )
+  {
+    window.location='RentalUnits.aspx';
+  }
+  else
+  {
+    window.location='Login.aspx';
+  }
+}
+
+function ClearSearchBox()
+{
+    if($('#ctl04_txtSearch').val()=="Enter Zip Code, City or State")
+    {
+        $('#ctl04_txtSearch').val("");
+        $('#ctl04_txtSearch').removeClass("SearchBox");
+    }
+}
+
+function InitialiseSearchBox()
+{
+    if($('#ctl04_txtSearch').val()=="")
+    {
+    $('#ctl04_txtSearch').addClass("SearchBox")
+        $('#ctl04_txtSearch').val("Enter Zip Code, City or State");
+    }
+}
+
+function validate()
+{
+    if($('#ctl04_txtSearch').val()=="Enter Zip Code, City or State" ||  $('#ctl04_txtSearch').val()=="")
+    {
+
+    //  $('#spnErrorZip').text("Enter the Zipcode");
+      return false;
+    }
+}
+
+
+    function nearMe_Click1()
+    {
+      var latitude = "33.3163";
+      var longitude = "-111.831";
+      window.location.href = "Locations.aspx?lat=" + latitude + "&lng=" + longitude + "&UseCurrentLocation=YES";
+      // window.location.href = "http://localhost:3613/e-storageOnlineMobile/Locations.aspx?lat=" + latitude + "&lng=" + longitude + "&UseCurrentLocation=YES";
+     }
+
+    function nearMe_Click()
+    {
+        if(navigator.geolocation)
+        {
+            var options = {timeout:60000};
+            // {maximumAge:600000,timeout:5000, enableHighAccuracy:true}
+            navigator.geolocation.getCurrentPosition(showLocation, 
+                                       errorHandler,
+                                        options);
+        }
+        else
+        {
+            alert("Sorry, browser does not support geolocation!");
+        }
+    }
+    
+   
+    function showLocation(position)
+    {
+        var latitude = position.coords.latitude;
+        var longitude = position.coords.longitude;
+        //alert("Latitude : " + latitude + " Longitude: " + longitude);
+        window.location.href = "Locations.aspx?lat=" + latitude + "&lng=" + longitude + "&UseCurrentLocation=YES";
+    }
+
+    function errorHandler(err)
+    {
+        if(err.code == 1) 
+        {
+            alert("Error: Access is denied!");
+        }
+        else if( err.code == 2)
+        {
+            alert("Error: Position is unavailable!");
+        }
+    }
+    
+    function GetRecentUrl()
+    {
+      // alert("1");
+     // ajaxRequest("GetData.ashx?ID=1")
+    }
+    
+     function initiateRequest()
+        {
+            if (window.XMLHttpRequest)
+                return new XMLHttpRequest();
+            elseif(window.ActiveXObject)
+                return new ActiveXObject("Microsoft.XMLHTTP");
+        }
+
+        function ajaxRequest(theURL) 
+        {
+        alert("2");
+            var thisRequestObject = initiateRequest();
+            thisRequestObject.onreadystatechange = function()
+            {
+                if (thisRequestObject.readyState == 4) 
+                {
+                    if (thisRequestObject.status == 200) 
+                    {
+                       alert(thisRequestObject.responseText);
+                    document.getElementById('hypBack').href = thisRequestObject.responseText;
+                     }
+                        
+                                
+                }
+            }
+            thisRequestObject.open("GET", theURL, true);
+            thisRequestObject.send(null);
+        }
+
+    
+       
+
+
+
+
+
+
+
+</script>
+
+
+            <div id="Container" class="content">
+           
+                <span id="lblContact"><div runat="server" class="ContactUs"><b style="font-size:16px;">ContactUs</b><br>5A Rent-A-Space<br>1221 East Hillsdale<br>Foster City, CA 94404</div></span>
+                <div class="ContactUs" style="padding-left: 10px;">
+                                     
+                        <div class="divContact">
+                            <span id="Span1">Location</span>
+                                <select name="DDLLocation" onChange="ShowLocationPhone();setTimeout(&#39;__doPostBack(\&#39;DDLLocation\&#39;,\&#39;\&#39;)&#39;, 0)" id="DDLLocation" class="DropDownHeight" style="width: 97%;">
+	<option selected="selected" value="-1">--Select a location--</option>
+	<option value="1">Foster City</option>
+	<option value="3">Lahaina</option>
+	<option value="2">Moraga</option>
+
+</select>
+                        </div>
+                        <div class="divContact">
+                            <span id="SpanName">Name</span>&nbsp;<span id="SpanNme" style="color: Red">*</span>&nbsp;<br>
+                            <input name="tbxName" type="text" id="tbxName" class="TextBoxHeight" style="width: 95%;">
+                        </div>
+                        <div class="divContact">
+                            <span id="SpanEmailAddress">E-mail Address</span>&nbsp;<span id="SpanEmail" style="color: Red">*</span><span></span>&nbsp;<br>
+                            <input name="tbxEmailAddress" type="text" id="tbxEmailAddress" class="TextBoxHeight" style="width: 95%;">
+                        </div>
+                        <div class="divContact">
+                            <span id="SpanComments">Comments</span>&nbsp;<span id="SpanCmt" style="color: Red">*</span>&nbsp;<br>
+                            <textarea name="tbxComments" rows="2" cols="20" id="tbxComments" style="width: 95%; height: 60px;"></textarea>
+                        </div>
+                        <div class="divContact">
+                            <input type="submit" name="btnSubmit" value="SUBMIT" onClick="return Rmve();WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;btnSubmit&quot;, &quot;&quot;, true, &quot;RfvValidate&quot;, &quot;&quot;, false, false))" id="btnSubmit" class="Viewbtn" style="display: inline;">&nbsp;
+                            <span id="lblMsg" style="color:Red;display: inline;"></span>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+<script type="text/javascript" language="javascript">
+        function Rmve()
+        {
+       
+          document.getElementById('SpanEmail').innerHTML='';
+          document.getElementById('SpanCmt').innerHTML='';
+          document.getElementById('SpanNme').innerHTML='';
+          return true;
+         
+        }
+        document.getElementById('lblContact').innerHTML=document.getElementById('lblContact').innerHTML;
+          ShowLocationPhone();
+        
+       
+	
+		
+        
+</script>
+
+
+</body></html>
